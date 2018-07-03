@@ -7,8 +7,8 @@ namespace WaterStrike
     [Flags]
     public enum FieldPoint
     {
-        None = 0,
-        Ship = 2,
-        Shooted = 4
+        None = 0x0,
+        Ship = 0x1,
+        Shooted = 0x2
     }
 }

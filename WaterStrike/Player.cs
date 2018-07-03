@@ -11,8 +11,16 @@ namespace WaterStrike
             Id = id;
         }
         public bool IsReady { get; set; }
+        public bool IsPlayerStroke { get; set; }
         public long Id { get; set; }
         public Player Enemy { get; set; }
+        public Dictionary<int, int> ShipsAvailableCount = new Dictionary<int, int>()
+        {
+            {4, 1},
+            {3, 2},
+            {2, 3},
+            {1, 4},
+        };
 
         /// <summary>
         /// 0 - empty, 1 - shooted, 2 -
